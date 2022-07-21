@@ -34,7 +34,7 @@ else:
    
 
 if cant == '' or eligio != True:
-    lista_op = lista_op + mayusculas + minusculas + numeros + simbolos
+    lista_op = lista_op + mayusculas + minusculas + numeros
     cant = 16
 contrasenia = ''
 for i in range(1,cant+1):
