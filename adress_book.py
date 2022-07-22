@@ -7,7 +7,7 @@ Telefono = input("Ingrese su numero de telefono: ")
 
 Fecha = datetime.today().strftime('%d-%m-%Y')
 
-with open('Adresses.csv', 'w') as csvfile:
+with open('Adresses.csv', 'a') as csvfile:
     fieldnames = ["ID", "Nombre", "Direccion", "Telefono", "Fecha"]
     writer = csv.DictWriter(csvfile, fieldnames = fieldnames)
     
