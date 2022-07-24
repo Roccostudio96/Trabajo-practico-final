@@ -2,6 +2,7 @@ import csv
 from datetime import datetime
 
 Nombre = input("Ingrese su nombre: ")
+DNI = input("Ingrese su DNI: ")
 Direccion = input("Ingrese su direccion: ")
 Telefono = input("Ingrese su numero de telefono: ")
 
@@ -12,6 +13,6 @@ with open('Adresses.csv', 'a') as csvfile:
     writer = csv.DictWriter(csvfile, fieldnames = fieldnames)
     
     writer.writeheader()
-    writer.writerow({"ID" : id(Telefono), "Nombre" : Nombre.upper(), "Direccion" : Direccion.upper(), "Telefono" : Telefono, "Fecha" : Fecha})
+    writer.writerow({"ID" : id(DNI), "Nombre" : Nombre.upper(), "Direccion" : Direccion.upper(), "Telefono" : Telefono, "Fecha" : Fecha})
 
 print("Datos Insertados Correctamente")    
