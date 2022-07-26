@@ -22,3 +22,8 @@ contraseña aleatoria, solicitando al usuario la longitud de la misma, si desea 
 una dirección en un archivo csv (valores separados por coma) con los siguientes campos: ID (generado aleatoriamente), nombre identificatorio, dirección, teléfono, fecha de registro (este último debe generarse automáticamente al realizar el registro).
 - Nombre del script: address_book.py
 - Nombre del archivo de texto: addresses.csv
+
+
+Integrantes:
+1. Oscar Gindel
+2. 
