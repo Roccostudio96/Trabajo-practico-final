@@ -1,3 +1,5 @@
+# - Una forma de mejorar el codigo es reducir los inputs con alguna variable auxiliar
+# - Hay que corregir el contador de frases cuando el archivo ya posee frases almacenadas, ya que devuelve un valor de más
 import os
 
 if os.path.isfile("phrases.txt"):

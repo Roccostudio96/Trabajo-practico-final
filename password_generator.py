@@ -32,11 +32,14 @@ while cant.isdigit() == False:
 else:
     cant = int(cant)
    
-
+# Corregir el condicional, ya que siempre me devuelve una contraseña de 16 digitos
 if cant == '' or eligio != True:
     lista_op = lista_op + mayusculas + minusculas + numeros
     cant = 16
+
 contrasenia = ''
+
+# Se puede cambiar el rango de valores a 'range(cant)'
 for i in range(1,cant+1):
     contrasenia = contrasenia + random.choice(lista_op)
 print(f"La contraseña quedo: {contrasenia}")
