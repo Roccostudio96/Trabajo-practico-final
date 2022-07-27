@@ -51,11 +51,9 @@ registro).
 
 # Integrantes:
 
-1. Integrante 1
-2. Integrante 2
-3. Integrante 3
-4. Integrante 4
-5. Integrante 5
+1. Oscar Gindel
+2. Dario Pinczanski
+3. Cynthia Solmesky
 
 # Correcciones:
 
@@ -66,6 +64,7 @@ clave de salida.
 - Ejercicio __'generador de contraseñas'__: Se debe corregir, ya que siempre devuelve una contraseña de 16 a pesar de que ingreso una longitud distinta
 
 - Ejercicio __'libreta de direcciones'__: Se debe corregir, ya que siempre que ingresa un dato se guarda las lineas de cabecera, que no deberia pasar. En su defecto, no agregar las cabeceras y solo registrar los datos ingresados por el usuario.
+
 ```
 ID,Nombre,Direccion,Telefono,Fecha
 139785974524464,JAIRO,AVENIDA SIEMPRE VIVA 123,3885123456,23-07-2022
