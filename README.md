@@ -27,3 +27,4 @@ una dirección en un archivo csv (valores separados por coma) con los siguientes
 Integrantes:
 1. Oscar Gindel
 2. Dario Pinczanski
+3. Cynthia Solmesky
