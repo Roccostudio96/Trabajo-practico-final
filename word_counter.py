@@ -30,7 +30,7 @@ f.close()
 
 total_palabras = total_palabras - 1
 file = open ('phrases.txt')
-print(file.read())
+#print(file.read())
 print(f"Usted ha ingresado un total de {total_palabras} palabras ")
 file.close()                                                                                                                   
       
