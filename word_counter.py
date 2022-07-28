@@ -30,7 +30,7 @@ while (frase != 'fin'):
 
 f.close()
 
-total_palabras = total_palabras - 1
+#total_palabras = total_palabras - 1
 file = open ('phrases.txt')
 #print(file.read())
 print(f"Usted ha ingresado un total de {total_palabras} palabras ")
