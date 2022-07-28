@@ -13,7 +13,7 @@ datos = archivo.read()
 palabras = datos.split()
 
 print(f"La cantidad de frases que tiene el archivo es de {len(aux)}")
-print(f"La cantidad total de palabras que tiene el archivoes de {len(palabras)}")
+print(f"La cantidad total de palabras que tiene el archivo es de {len(palabras)}")
 
 archivo.close()
 
