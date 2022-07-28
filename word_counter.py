@@ -2,6 +2,21 @@
 # - Hay que corregir el contador de frases cuando el archivo ya posee frases almacenadas, ya que devuelve un valor de más
 import os
 
+with open("phrases.txt") as archivo:
+    aux = archivo.readlines() 
+    palabras= 0
+    for linea in aux:
+        palabras=palabras+linea.count(' ') + 1
+
+archivo = open("phrases.txt", "rt")
+datos = archivo.read()
+palabras = datos.split()
+
+print(f"La cantidad de frases que tiene el archivo es de {len(aux)}")
+print(f"La cantidad total de palabras que tiene el archivoes de {len(palabras)}")
+
+archivo.close()
+
 print("El programa termina cuando se ingresa la palabra fin")
 
 f = open('phrases.txt', 'a')
@@ -27,7 +42,6 @@ archivo = open("phrases.txt", "rt")
 datos = archivo.read()
 palabras = datos.split()
 
-print(f"La cantidad de frases es de {len(aux)}")
-print(f"La cantidad total de palabras es de {len(palabras)}")
+print(f"Ahora hay {len(aux)} frases y {len(palabras)} palabras")
 
 archivo.close()
