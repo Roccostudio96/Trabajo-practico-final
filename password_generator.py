@@ -38,7 +38,8 @@ if eligio != True:
 
 contrasenia = ''
 
-# Se puede cambiar el rango de valores a 'range(cant)'
+# Se puede cambiar el rango de valores a 'range(cant)' si lo modifico 
+#va a generar una contraseña de un caracter menos a lo indicado
 for i in range(1,cant+1):
     contrasenia = contrasenia + random.choice(lista_op)
 print(f"La contraseña quedo: {contrasenia}")
