@@ -6,7 +6,7 @@ with open("phrases.txt") as archivo:
     aux = archivo.readlines() 
     palabras=0
     for linea in aux:
-        palabras=palabras+linea.count(' ')
+        palabras=palabras+linea.count(' ') + 1
     print(f"La cantidad de palabras existentes en el archivo es de: {palabras} y la cantidad de frases es de {len(aux)}")
 
 print ("El programa termina cuando se ingresa la palabra fin")
