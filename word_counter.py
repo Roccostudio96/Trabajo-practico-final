@@ -1,42 +1,29 @@
-# - Una forma de mejorar el codigo es reducir los inputs con alguna variable auxiliar
-# - Hay que corregir el contador de frases cuando el archivo ya posee frases almacenadas, ya que devuelve un valor de más
 import os
 
-archivo = open("phrases.txt", "rt")
-datos = archivo.read()
-palabras = datos.split()
-aux=archivo.readlines()
+if os.path.isfile("phrases.txt"):
+    with open("phrases.txt") as archivo:
+        aux = archivo.readlines()
+        palabras=0
+        for linea in aux:
+            palabras=palabras+linea.count(' ') + 1
+        print(f"La cantidad de palabras existentes en el archivo es de: {palabras} y la cantidad de frases es de {len(aux)}")
 
-print(f"La cantidad de frases que tiene el archivo es de {len(aux)}")
-print(f"La cantidad total de palabras que tiene el archivo es de {len(palabras)}")
-
-archivo.close()
-
-print("El programa termina cuando se ingresa la palabra fin")
-
-f = open('phrases.txt', 'a')
+print ("El programa termina cuando se ingresa la palabra fin")
 
 frase = input(str("Escriba una frase: "))
- 
-while (frase != "fin"):
-    f.write('\n' + frase)
-    total_palabras = frase.count(' ') + 1
-    frase = input(str("Escriba otra frase: "))
+
+f = open('phrases.txt', 'a')
+cant_frases = 0
+total_palabras=0
+
+while (frase != 'fin'):
     total_palabras_otra_frase = frase.count(' ') + 1
+    print (f"La frase tiene {total_palabras_otra_frase} palabras")
+    f.write('\n' + frase )
     total_palabras = total_palabras + total_palabras_otra_frase
+    cant_frases=cant_frases+1
+    frase = input(str("Escriba otra frase: "))
 
 f.close()
 
-with open("phrases.txt") as archivo:
-    aux = archivo.readlines() 
-    palabras= 0
-    for linea in aux:
-        palabras=palabras+linea.count(' ') + 1
-
-archivo = open("phrases.txt", "rt")
-datos = archivo.read()
-palabras = datos.split()
-
-print(f"Ahora hay {len(aux)} frases y {len(palabras)} palabras")
-
-
+print(f"Usted ha ingresado un total de {total_palabras} palabras y {cant_frases} frases")
