@@ -5,8 +5,9 @@ import os
 archivo = open("phrases.txt", "rt")
 datos = archivo.read()
 palabras = datos.split()
+aux=archivo.readlines()
 
-print(f"La cantidad de frases que tiene el archivo es de {len(archivo.readlines())}")
+print(f"La cantidad de frases que tiene el archivo es de {len(aux)}")
 print(f"La cantidad total de palabras que tiene el archivo es de {len(palabras)}")
 
 archivo.close()
