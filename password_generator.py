@@ -33,9 +33,8 @@ else:
     cant = int(cant)
    
 # Corregir el condicional, ya que siempre me devuelve una contraseña de 16 digitos
-if cant == '' or eligio != True:
+if eligio != True:
     lista_op = lista_op + mayusculas + minusculas + numeros
-    cant = 16
 
 contrasenia = ''
 
