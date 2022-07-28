@@ -1,12 +1,6 @@
 # - Una forma de mejorar el codigo es reducir los inputs con alguna variable auxiliar
 # - Hay que corregir el contador de frases cuando el archivo ya posee frases almacenadas, ya que devuelve un valor de más
-import os
 
-with open("phrases.txt") as archivo:
-    aux = archivo.readlines() 
-    palabras= 0
-    for linea in aux:
-        palabras=palabras+linea.count(' ') + 1
 
 archivo = open("phrases.txt", "rt")
 datos = archivo.read()
