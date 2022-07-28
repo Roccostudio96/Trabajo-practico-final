@@ -14,7 +14,7 @@ print ("El programa termina cuando se ingresa la palabra fin")
 
 frase = input(str("Escriba una frase: "))
 total_palabras = frase.count(' ') + 1
-print (f"La frase tiene {total_palabras} palabras")
+#print (f"La frase tiene {total_palabras} palabras")
 
 f = open('phrases.txt', 'a')
 f.write('\n' + frase )
