@@ -57,19 +57,4 @@ registro).
 
 # Correcciones:
 
-- Ejercicio __'contador de palabras'__: El programa no debe mostrar al final todo el contenido del archivo, solo un mensaje expresando
-la cantidad de frases que contiene y las cantidad de palabras totales. No debe mostrar un mensaje si se ingresa la palabra
-clave de salida.
-
-- Ejercicio __'generador de contraseñas'__: Se debe corregir, ya que siempre devuelve una contraseña de 16 a pesar de que ingreso una longitud distinta
-
-- Ejercicio __'libreta de direcciones'__: Se debe corregir, ya que siempre que ingresa un dato se guarda las lineas de cabecera, que no deberia pasar. En su defecto, no agregar las cabeceras y solo registrar los datos ingresados por el usuario.
-
-```
-ID,Nombre,Direccion,Telefono,Fecha
-139785974524464,JAIRO,AVENIDA SIEMPRE VIVA 123,3885123456,23-07-2022
-ID,Nombre,Direccion,Telefono,Fecha # no deberia aparacer
-140443894229168,JAIRO,AVENIDA,123456789,27-07-2022
-ID,Nombre,Direccion,Telefono,Fecha # no deberia aparacer
-139942252124656,JOSE,MARTIARENA,123654789,27-07-2022
-```
+- Ejercicio __'contador de palabras'__: Se agrega comentario para corregir el conteo cuando el archivo ya tiene datos.

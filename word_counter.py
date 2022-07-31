@@ -5,6 +5,9 @@ if os.path.isfile("phrases.txt"):
         aux = archivo.readlines()
         palabras=0
         for linea in aux:
+            # Agregar una sentencia if para que no sume lineas vacias
+            # if linea != "":
+            #     palabras=palabras+linea.count(' ') + 1
             palabras=palabras+linea.count(' ') + 1
         print(f"La cantidad de palabras existentes en el archivo es de: {palabras} y la cantidad de frases es de {len(aux)}")
 
